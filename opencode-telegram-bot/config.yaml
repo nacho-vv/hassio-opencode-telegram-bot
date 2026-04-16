@@ -3,11 +3,12 @@ name: "OpenCode Telegram Bot"
 description: "Control OpenCode from Telegram - Run and monitor AI coding tasks from your phone"
 version: "1.0.0"
 slug: "opencode-telegram-bot"
-image: "ghcr.io/nacho-vv/opencode-telegram-bot/{arch}"
+image: "node:20-slim"
 url: "https://github.com/nacho-vv/hassio-opencode-telegram-bot"
 arch:
   - aarch64
   - amd64
+  - armv7
 startup: services
 init: false
 
