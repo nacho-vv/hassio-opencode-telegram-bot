@@ -1,34 +1,21 @@
----
 name: "OpenCode Telegram Bot"
-description: "Control OpenCode from Telegram - Run and monitor AI coding tasks from your phone"
+description: "Control OpenCode from Telegram"
 version: "1.0.0"
 slug: "opencode-telegram-bot"
 image: "node:20-slim"
-url: "https://github.com/nacho-vv/hassio-opencode-telegram-bot"
 arch:
-  - aarch64
   - amd64
-  - armv7
+  - aarch64
 startup: services
 init: false
-
 hassio_api: true
 hassio_role: default
 homeassistant_api: true
-
-host_network: false
-apparmor: true
-
 options:
   telegram_bot_token: ""
   telegram_user_id: ""
   opencode_api_url: "http://192.168.1.141:4096"
-  opencode_model_provider: "opencode"
-  opencode_model_id: "big-pickle"
-
 schema:
   telegram_bot_token: str
   telegram_user_id: str
   opencode_api_url: str
-  opencode_model_provider: str
-  opencode_model_id: str
